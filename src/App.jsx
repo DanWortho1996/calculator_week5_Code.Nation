@@ -42,7 +42,7 @@
 //Attempt 1 (WORKS) //Activity 1
 import React, {useState} from 'react';
 
-const Calculator = () => {
+const App = () => {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
 
@@ -88,7 +88,7 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default App;
 
 
 
