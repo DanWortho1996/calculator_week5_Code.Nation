@@ -64,7 +64,7 @@ const App = () => {
 
   return (
     <div className="calculator">
-      <h1>The Calculator App Though</h1>
+      <h1>The Calculator App</h1>
       <div className="display">
         <p>Input</p>
         <input type="text" value={input} readOnly />
