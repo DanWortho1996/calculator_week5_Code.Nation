@@ -39,8 +39,9 @@
 // export default App
 
 
-//Attempt 1 (WORKS) //Activity 1
+//Activity 1 Calculator (Complete)
 import React, {useState} from 'react';
+import './App.css'
 
 const App = () => {
   const [input, setInput] = useState('');
@@ -49,7 +50,7 @@ const App = () => {
   const handleButtonClick = (value) => {
     if (value === '=') {
       try {
-        setResult(eval(input));  // WARNING: eval() can be dangerous
+        setResult(eval(input));  // WARNING: eval() can also be dangerous
       } catch (error) {
         setResult('Error');
       }
@@ -63,9 +64,11 @@ const App = () => {
 
   return (
     <div className="calculator">
+      <h1>The Calculator App Though</h1>
       <div className="display">
-      <h1>The Calculator App Though WITHOUT CSS</h1>
+        <p>Input</p>
         <input type="text" value={input} readOnly />
+        <p>Answer</p>
         <input type="text" value={result} readOnly />
       </div>
       <div className="buttons">
